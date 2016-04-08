@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>103万円の壁</title>
+</head>
+<body>
+<header>
+<h1>103万円の壁</h1>
+<p>このアプリは扶養控除の限界額103万円まで後いくらか計算するアプリです。</p>
+</header>
+<div id="main">
+<div id="top">
+	<form id="kyuuryo" action="/cgi-bin/cgitext.py" method="POST">
+
+	<select id="scheme" name="scheme">
+		<option value="hourly">時給</option>
+		<option value="daily">日給</option>
+	</select>
+	=
+	<input type="text" name="kyuuryo">円
+</div>
+<div id="month">
+<ul>
+<li>
+	<label>
+	1月
+	</label>
+	<input type="text" name="1" />円
+</li>
+<li>
+	<label>
+	2月
+	</label>
+	<input type="text" name="2" />円
+</li>
+<li>
+	<label>
+	3月
+	</label>
+	<input type="text" name="3" />円
+</li>
+<li>
+	<label>
+	4月
+	</label>
+	<input type="text" name="4" />円
+</li><li>
+	<label>
+	5月
+	</label>
+	<input type="text" name="5" />円
+</li><li>
+	<label>
+	6月
+	</label>
+	<input type="text" name="6" />円
+</li><li>
+	<label>
+	7月
+	</label>
+	<input type="text" name="7" />円
+</li><li>
+	<label>
+	8月
+	</label>
+	<input type="text" name="8" />円
+</li><li>
+	<label>
+	9月
+	</label>
+	<input type="text" name="9" />円
+</li><li>
+	<label>
+	10月
+	</label>
+	<input type="text" name="10" />円
+</li><li>
+	<label>
+	11月
+	</label>
+	<input type="text" name="11" />円
+</li><li>
+	<label>
+	12月
+	</label>
+	<input type="text" name="12" />円
+</li>
+</ul>
+</div>
+<div id="button">
+<input id="button" type="submit" name="送信" value="計算する">
+<input id="button" type="reset" name="リセット" value="やりなおす">
+</div>
+
+</form>
+</div>
+</body>
+</html>
